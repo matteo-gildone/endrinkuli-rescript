@@ -5,13 +5,6 @@ let getRandomIntInclusive = (sides: int): int => {
   //Js.Math.random_int(1, sides + 1)
 }
 
-//const discardMin = (rolled: number[]) => {
-//    const rolls = rolled.slice();
-//    const smallest = Math.min.apply(null, rolls);
-//    const smallestIndex = rolls.indexOf(smallest);
-//    return rolls.slice(0, smallestIndex).concat(rolls.slice(smallestIndex + 1));
-//};
-
 let discardMin = (rolled: array<int>): array<int> => {
   let smallest = rolled->Js.Math.minMany_int
   let smallestIndex = Js.Array2.indexOf(rolled, smallest)
